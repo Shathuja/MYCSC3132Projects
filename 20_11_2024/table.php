@@ -1,15 +1,15 @@
 <?php
-
+//get the db connection file
 require_once 'dbconf.php';
 
 try {
 
-	
+	//Query
 	$sql = "SELECT * FROM Student";
 
-	
+	//excute the quey
 	$result = mysqli_query($connect,$sql);
-	
+	//check if data exists in the table
 	if (mysqli_num_rows($result)>0) {
 		// fetch the data from rows
 		while ($row = mysqli_fetch_assoc($result)) {
@@ -19,7 +19,8 @@ try {
 		echo "No results";
 	}
 	
-} catch (Exception $e) {
+} 
+catch (Exception $e) {
 	die($e->getMessage());
 }
 
