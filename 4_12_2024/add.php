@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>2020/ASP/50</h1><br><br>
+    <h1>my Work 06.12.2024</h1><br><br>
 
     <a href="gettable.php">Gettable</a><br>
     
